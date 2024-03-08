@@ -1,8 +1,8 @@
-import '../styles/_header.scss'
+import './_header.scss'
 
 const Header = () => {
-    const logo = new URL('../assets/images/logo.svg', import.meta.url).href
-    const menu = new URL('../assets/images/icon-menu.svg', import.meta.url).href
+    const logo = new URL('@/assets/images/logo.svg', import.meta.url).href
+    const menu = new URL('@/assets/images/icon-menu.svg', import.meta.url).href
 
     const open = () => {};
 

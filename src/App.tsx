@@ -1,6 +1,6 @@
-import Header from "./layout/Header";
+import Header from "./layout/Header/Header";
 import "./App.css";
-import Footer from "./layout/Footer";
+import Footer from "./layout/Footer/Footer";
 import NewsProvider from "./context/newsContext";
 
 function App() {
