@@ -1,0 +1,118 @@
+/* color palette from <https://github.com/vuejs/theme> */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+  --vt-primary-soft-orange: hsl(35, 77%, 62%);
+  --vt-primary-soft-red: hsl(5, 85%, 63%);
+
+  --vt-neutral-white: hsl(36, 100%, 99%); 
+  --vt-neutral-gray: hsl(233, 8%, 79%);
+  --vt-neutral-dark-gray: hsl(236, 13%, 42%);
+  --vt-neutral-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-neutral-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background-color: var(--vt-neutral-white);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button {
+  all: unset;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.attribution { font-size: 11px; text-align: left; margin-left: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#root {
+  max-width: 1120px;
+  font-family: Inter;
+  font-weight: normal;
+  padding: 2rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 3px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  #root {
+    margin: 0 auto;
+    padding: 6rem 1rem;
+  }
+}

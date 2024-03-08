@@ -1,0 +1,30 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__menu {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        direction: rtl;
+
+        &__menu {
+            display: none;
+        }
+
+        &__container {
+            display: block;
+            place-self: center;
+        }
+    }
+}
